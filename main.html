@@ -12,25 +12,20 @@
 			//Write your code here
 			let max = -Infinity;
 			let max2 = -Infinity;
-			let occurances = 1;
-			for(let i=0; i<=arr.length; i++){
-				if(arr[i]==arr[i+1]){
-					occurances++;
-				}
-			}
-			if(arr.length==0 || arr.length==1 || arr.length==occurances){
+			
+			if(arr.length==0 || arr.length==1 ){
 				return -Infinity; 
 			}
-			for(let j=0; i<arr.length; i++){
+			for(let j=0; i<arr.length; j++){
 				if(arr[j]>max){
 					max = arr[j];
-				}
+				} }
 				for(let k=0; k<arr.length; k++){
 					if(arr[k]>max2 && arr[k]<max){
 						max2 = arr[k];
 					}
 				}
-			}
+			
 			return max2;
 		}
 
